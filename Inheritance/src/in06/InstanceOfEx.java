@@ -1,6 +1,6 @@
 package in06;
 
-public class InstanceOdEx {
+public class InstanceOfEx {
 
 	static void print(Person p) { //static이 붙은 메소드 -> 클래스 메소드 (객체로 접근하지 않아도 호출 가능함)
 		if(p instanceof Person)
