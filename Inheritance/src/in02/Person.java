@@ -1,6 +1,7 @@
 package in02;
 
 public class Person {
+	
 	private int weight;
 	int age;
 	protected int height;
@@ -9,6 +10,7 @@ public class Person {
 	public int getWeight() {
 		return weight;
 	}
+	
 	public void setWeight(int weight) {
 		this.weight = weight;
 	}

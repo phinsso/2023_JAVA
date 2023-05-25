@@ -4,13 +4,13 @@ public class InstanceOfEx {
 
 	static void print(Person p) { //static이 붙은 메소드 -> 클래스 메소드 (객체로 접근하지 않아도 호출 가능함)
 		if(p instanceof Person)
-			System.out.println("Person 객체 타입");
+			System.out.print("Person ");
 		if(p instanceof Student)
-			System.out.println("Student 객체 타입");
+			System.out.print("Student ");
 		if(p instanceof Researcher)
-			System.out.println("Researcher 객체 타입");
+			System.out.print("Researcher ");
 		if(p instanceof Professor)
-			System.out.println("Professor 객체 타입");
+			System.out.print("Professor ");
 		System.out.println();
 	}
 	
