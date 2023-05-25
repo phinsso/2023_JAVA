@@ -1,4 +1,4 @@
-package File06;
+package file06;
 
 import java.io.IOException;
 
