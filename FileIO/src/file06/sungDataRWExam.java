@@ -49,8 +49,10 @@ public class sungDataRWExam {
 					// System.out.println(csvStr);
 				}
 			} while (tmpStr != null);
+			
 			StringTokenizer parse = new StringTokenizer(csvStr, "\t");
 			length = parse.countTokens() / 4;
+			
 			for (int i = 0; i < length; i++) {
 				name[i] = parse.nextToken();
 				address[i] = parse.nextToken();
@@ -59,9 +61,11 @@ public class sungDataRWExam {
 				total[i] = math[i] + english[i];
 				avg[i] = total[i] / 2.0;
 			}
+			
 			System.out.println("연산이 잘 이루어졌습니다.");
 			br.close();
 			fr.close();
+			
 		} catch (FileNotFoundException e) {
 			System.out.println("잘못된 파일 이름을 입력했습니다");
 		}

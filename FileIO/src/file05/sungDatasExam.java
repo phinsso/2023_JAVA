@@ -27,7 +27,7 @@ public class sungDatasExam {
 			StringTokenizer parse = new StringTokenizer(csvStr, "\t");
 			// 토큰의 구분자가 탭 ("\t")
 			
-			int length = parse.countTokens() / 4;
+			int length = parse.countTokens() / 4; // 항목이 네 개이기 때문에 / 4를 함
 			String[] name = new String[length];
 			String[] address = new String[length];
 			double[] math = new double[length];
@@ -36,7 +36,7 @@ public class sungDatasExam {
 			double[] avg = new double[length];
 			
 			for (int i = 0; i < length; i++) {
-				name[i] = parse.nextToken();
+				name[i] = parse.nextToken(); // nextToken(): 다음 토큰을 불러옴
 				address[i] = parse.nextToken();
 				math[i] = Double.valueOf(parse.nextToken()).doubleValue();
 				english[i] = Double.valueOf(parse.nextToken()).doubleValue();

@@ -13,7 +13,7 @@ public class CollectionsEx {
 		while(iterator.hasNext()) { // iterator가 가리키는 곳에 데이터가 존재하면 true
 			String e = iterator.next(); // iterator가 가리키는 곳의 데이터를 e에게 넘겨줌
 			// 데이터를 넘겨준 후에 그 다음 데이터를 가리킴
-			String separator;
+			String separator; // 분리기호
 			
 			if(iterator.hasNext()) // hasNext(): 읽어올 요소가 있는지 확인 (있으면 true, 없으면 false)
 				separator = "=>"; // 읽어올 요소가 있으면 => 후 다음 데이터 읽어옴
